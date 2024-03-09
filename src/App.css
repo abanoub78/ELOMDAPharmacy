@@ -1,38 +1,197 @@
+
 .App {
   text-align: center;
 }
-
+/* .div{
+  position: absolute;
+    top: 100px;
+    left: 150px;
+} */
+.mydropdown{
+  right: 5px
+}
+.mynav{
+  text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.maindiv{
+  position: absolute;
+  top: 70px;
+}
+.productdiv{
+  position: relative;
+  background: rgb(235, 231, 231);
+  padding: 10px;
+  width: 23%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productdiv .sale{
+  position: absolute;
+   right: 4px;
+  background-color: rgb(212, 234, 19);
+  padding: 7px;
+  top: 0pc;
+}
+.productdiv .btns{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.productdiv .btns button{
+  border: 0;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}
+.productdiv .btns .update{
+  background-color: rgb(50, 105, 235);
+
+}
+.productdiv .btns .delete{
+  background-color: rgb(230, 64, 64);
+}
+.p{
+  border-bottom: 1px solid;
+  padding: 7px;
+}
+
+.navbarr{
+  background: #eb2449;
+  padding: 15px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.navbarr .nav{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 10px;
+}
+.navbarr .nav li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navbarr .nav li a:hover{
+  color: black;
+}
+
+.navname{
+  display: contents;
+}
+.homebg{
+  background-image: url(../public/p2.jpg) !important;
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
+  background-size: cover;
+  padding-top: 45px;
+}
+
+
+
+.cont{
+  position: absolute;
+  top: 10%;
+}
+.cont .title{
+  font-size: 37px;
+  color: darkslategrey;
+  font-weight: 900;
+  background: #e6f4fd;
+  width: fit-content;
+  height: fit-content;
+}
+.dicpic{
+  width: 600px;
+}
+@media (max-width: 767px){
+  .dicpic{
+    width: 300px !important;
+  }
+}
+ol {
+  list-style: none; /* Remove default list styles */
+}
+
+.cartCar{
+  cursor: pointer;
+  font-size: 20px;
+}
+.emptyDiv{
+  right: 0;
+  top: 60px;
+  z-index: 1000;
+  background: white;
+  color: black;
+  padding: 20px;
+
+}
+.emptyDiv .info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid;
+  padding: 5px;
+}
+.emptyDiv .foot{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+}
+.emptyDiv .foot .btns{
+  display: flex;
+  gap: 10px;
+}
+.emptyDiv img{
+  height: 50px;
+}
+/* Hide markers specifically for the ::marker pseudo-element */
+ol::marker {
+  display: none;
+}
+.contimgs img{
+  width: 100%;
+  height: 300px;
+}
+.container .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+.container .boxes img{
+  height: 200px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.boxes .foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.boxes .foot p{
+  display: contents;
+    font-size: 20px;
+}
+.mynav{
+  position: fixed !important;
+  width: 100%;
+  z-index: 100000;
+  top: 0;
+
+}
+/****************baby************/
+.baby .bg img{
+width: 100%;
+height: 300px;
 }
